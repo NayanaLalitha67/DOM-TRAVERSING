@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>traversing</title>
+<script type="text/javascript" src="jquery/jquerylal.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+
+$("#a").click(function(){
+	//var k=$("div").parent().text();
+    //alert(k);
+   // $("li").parent().css("color","red");
+//$("#k").parents("ul").css("color","red");
+//$("#k").parentsUntil("ul").css("color","red");
+//$("#l").children().css("color","red");
+//$("body").find("p").css("color","red");
+//$("ul").children().each(function(){
+
+//var n=$(this).text();
+//alert(n);
+
+//});
+
+//$("ul").siblings().each(function(){
+
+//var n=$(this).text();
+//alert(n);
+
+
+//});
+
+//$("button").next().each(function(){
+//var n=$(this).text();
+//alert(n);
+
+//});
+
+//alert($("button").nextAll().text());
+//alert($("button").nextUntil("p").text());
+//alert($("button").prev().text());
+//alert($("ul").prevAll().text());
+//alert($("p").first().text());
+//alert($("p").last().text());
+ //alert($("p").eq(1).text());
+alert($("p").filter("#k").text());
+});
+});
+</script>
+</head>
+<body>
+	<h1>DOM</h1>
+	<button id="a">click</button>
+	<p>hello lalitha</p>
+	<ul>
+		<li>CSE</li>
+			<li id="l">
+				<p id="k">ECE IS A GOOD BRANCH</p>
+				<div>
+				<a href="#">link</a>
+				jaya 	
+				<p id="k">lalitha is a cs student</p>
+			</div>
+			</li>
+
+			<li>CIVIL</li>
+		</ul>
+	</body>
+	</html>
+
